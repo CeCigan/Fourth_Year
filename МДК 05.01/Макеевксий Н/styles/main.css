@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Calibri;
+  src: url(/fonts/CALIBRI.TTF);
+}
+
+@font-face {
+  font-family: Calibri-B;
+  src: url(/fonts/CALIBRIB.TTF);
+}
+
+@font-face {
+  font-family: Calibri-I;
+  src: url(/fonts/CALIBRII.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Calibri;
+}
+
+/*Шапка сайта*/
+header {
+  background: url();
+  display: flex;
+  justify-content: center;
+}
+.logo-box {
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.lozung {
+  width: auto;
+  text-align: center;
+  font-size: larger;
+  font-style: normal;
+}
+
+/* Панель навигации */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: large;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: black;
+  font-family: Calibri;
+}
+.header-nav :last-child {
+  margin-left: -40px;
+}
+.oblique {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  background-color: black;
+}
+/* Блок с новыми принтерами */
+.news-block {
+  margin-top: 6vh;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.cards-group {
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+  margin-top: 2vh;
+  gap: 2vw;
+}
+.card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  border-radius: 10px;
+  box-shadow: 3px 5px rgba(147, 147, 147, 0.2);
+}
+.card .oblique {
+  text-align: center;
+}
+
+/* Форма регистарции на сайте */
+.registration {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(15, 15, 15, 0.3);
+  border-radius: 15px;
+}
