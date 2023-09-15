@@ -26,8 +26,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.logo-box {
-}
+
 .logo-img {
   display: flex;
   align-items: center;
@@ -45,8 +44,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   padding-top: 6px;
@@ -59,6 +58,24 @@ header {
   color: black;
   font-family: Calibri;
 }
+.reg{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+.checked{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
 .header-nav :last-child {
   margin-left: -40px;
 }
@@ -68,6 +85,9 @@ header {
   padding: 4px 6px 4px 6px;
   color: white;
   background-color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
 }
 /* Блок с новыми принтерами */
 .news-block {
@@ -80,24 +100,24 @@ header {
   border-bottom: 2px solid black;
 }
 
-.cards-group {
+.slider {
   margin: 0 auto;
   display: flex;
   width: fit-content;
   margin-top: 2vh;
   gap: 2vw;
 }
-.card {
+.item {
   width: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 5px;
   border: 1px solid rgba(15, 15, 15, 0.3);
   border-radius: 10px;
   box-shadow: 3px 5px rgba(147, 147, 147, 0.2);
 }
-.card .oblique {
-  text-align: center;
+.previous, .next{
+  margin-top: 50%;
 }
 
 /* Форма регистарции на сайте */
@@ -106,4 +126,75 @@ header {
   flex-direction: column;
   border: 2px solid rgba(15, 15, 15, 0.3);
   border-radius: 15px;
+}
+
+
+
+
+/* Страница каталога */
+.catalog-main{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.find-btn{
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.find-btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+.cards-group{
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  
+}
+.card{
+  width: fit-content;
+  max-width: 30%;
+  display: block;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  display: none;
+}
+.card p{
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+.card img{
+  width: auto;
+  max-width: 290px;
+  height: auto;
+  max-height: 240px;
+  z-index: 0;
+}
+.card .oblique{
+  width:100%;
+}
+
+.btn-find .active{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+.show {
+  display: block;
 }

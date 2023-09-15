@@ -22,13 +22,13 @@
     <!-- Панель навигации -->
     <nav class="header-nav">
       <a href="" class="nav-btn checked">О нас</a>
-      <a href="" class="nav-btn">Каталог</a>
+      <a href="pages/goods.htm" class="nav-btn">Каталог</a>
       <a href="" class="nav-btn">Корзина</a>
       <a href="" class="nav-btn">Заказы</a>
       <a href="" class="nav-btn">Где нас найти?</a>
       <a href="" class="nav-btn">Выход</a>
-      <a href="" class="nav-btn oblique">Вход</a>
-      <a href="" class="nav-btn oblique">Регистрация</a>
+      <a href="" class="nav-btn reg">Вход</a>
+      <a href="" class="nav-btn reg">Регистрация</a>
     </nav>
 
     <!-- Главная часть  -->
@@ -39,11 +39,13 @@
       <div class="slider ">
         <div class="item">
           <a href="" class="previous" onclick="previusSlide()">&#10094</a>
-          <h3>HP LaserJet</h3>
-          <p>Лазерный принтер HP</p>
-          <img src="images/good-img.png" alt="" />
-          <a href="" class="oblique">Купить</a>
-          <a href="" class="next" onclick="nextSlide()">&#10095</a>
+          <div class="card">
+            <h3>HP LaserJet</h3>
+            <p>Лазерный принтер HP</p>
+            <img src="images/good-img.png" alt="" />
+            <button class="oblique">Купить</button >
+        </div>
+        <a href="" class="next" onclick="nextSlide()">&#10095</a>
         </div>
 
         <div class="item">
@@ -51,7 +53,7 @@
           <h3>HP LaserJet</h3>
           <p>Лазерный принтер HP</p>
           <img src="images/good-img.png" alt="" />
-          <a href="" class="oblique">Купить</a>
+          <button class="oblique">Купить</button >
           <a href="" class="next" onclick="nextSlide()">&#10095</a>
         </div>
 
@@ -88,7 +90,16 @@
         <input type="text" name="" id="" placeholder="Номер телефона" />
       </form>
     </main>
-
+    <footer class="header-nav">
+      <a href="" class="nav-btn checked">О нас</a>
+      <a href="" class="nav-btn">Каталог</a>
+      <a href="" class="nav-btn">Корзина</a>
+      <a href="" class="nav-btn">Заказы</a>
+      <a href="" class="nav-btn">Где нас найти?</a>
+      <a href="" class="nav-btn">Выход</a>
+      <a href="" class="nav-btn reg">Вход</a>
+      <a href="" class="nav-btn reg">Регистрация</a>
+    </footer>
     <script src = 'scripts/slider.js'></script>
   </body>
 </html>
