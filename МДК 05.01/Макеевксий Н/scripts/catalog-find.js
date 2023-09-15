@@ -1,13 +1,36 @@
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
-  var x, i;
+  var x, i, coast, userCoast;
   x = document.getElementsByClassName("card");
+  coast = Number(document.getElementsByClassName('coast').innerHTML);
+  userCoast = Number(document.getElementById('coastInp').value);
   if (c == "all") c = "";
   // Добавить класс "show" (display:block) к отфильтрованным элементам и удалите класс "show" из элементов, которые не выбраны
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+}
+
+function findAtUserCoast(){
+    let userCoast = document.getElementById('coastInp').value;
+    let goodsCoast = document.getElementsByClassName('coast');
+
+
+    console.log(userCoast);
+
+    for(let i = 0; i < goodsCoast.length; i++){
+        if(Number(userCoast) > Number(goodsCoast[i].innerHTML)){
+            goodsCoast[i].parentElement.style.display = 'flex';
+            console.log('Del: ' + goodsCoast[i].innerHTML)
+        } else if (userCoast == '') {
+            filterSelection("all");
+        } else {
+            goodsCoast[i].parentElement.style.display = 'none';
+        }
+
+        console.log([goodsCoast[i].innerHTML])
+    }
 }
 
 // Показать отфильтрованные элементы

@@ -27,6 +27,12 @@ header {
   justify-content: center;
 }
 
+.input{
+  font-size: 22px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0 10px;
+}
 .logo-img {
   display: flex;
   align-items: center;
@@ -44,8 +50,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   padding-top: 6px;
@@ -126,6 +132,13 @@ header {
   flex-direction: column;
   border: 2px solid rgba(15, 15, 15, 0.3);
   border-radius: 15px;
+  width: 60%;
+  margin: 2vh auto;
+  gap: 1vh;
+  padding: 5px;
+}
+.registration input{
+  font-size: 20px;
 }
 
 
@@ -144,6 +157,11 @@ header {
   cursor: pointer;
   transition: 0.2s;
 }
+.find-field{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 .find-btn:hover{
   background-color: black;
   color: white;
@@ -158,30 +176,30 @@ header {
   
 }
 .card{
-  width: fit-content;
-  max-width: 30%;
+  width: 20%;
   display: block;
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+
 }
 .card p{
   font-size: 18px;
   color: black;
   text-align: center;
+  
 }
+
 .card img{
-  width: auto;
-  max-width: 290px;
+  max-width: 50%;
   height: auto;
-  max-height: 240px;
-  z-index: 0;
+  overflow: hidden;
+  object-fit: contain;
 }
 .card .oblique{
   width:100%;
@@ -196,5 +214,5 @@ header {
   text-decoration: none;
 }
 .show {
-  display: block;
+  display:flex;
 }
