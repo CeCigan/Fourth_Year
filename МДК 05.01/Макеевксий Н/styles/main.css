@@ -149,6 +149,11 @@ header {
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
+.good-link{
+  font-size: large;
+  color: black;
+  font-weight: 500;
+}
 .find-btn{
   border: 2px solid black;
   border-radius: 10px;
@@ -215,4 +220,11 @@ header {
 }
 .show {
   display:flex;
+}
+
+
+
+/* О товаре: */
+.basket{
+  
 }

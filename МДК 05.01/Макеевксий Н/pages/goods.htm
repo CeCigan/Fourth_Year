@@ -21,9 +21,9 @@
     <!-- Панель навигации -->
     <nav class="header-nav">
     <a href="../index.htm" class="nav-btn ">О нас</a>
-    <a href="" class="nav-btn checked">Каталог</a>
-    <a href="" class="nav-btn">Корзина</a>
-    <a href="" class="nav-btn">Заказы</a>
+    <a href="goods.htm" class="nav-btn checked">Каталог</a>
+    <a href="basket.htm" class="nav-btn">Корзина</a>
+    <a href="goodCard.htm" class="nav-btn">Заказы</a>
     <a href="" class="nav-btn">Где нас найти?</a>
     <a href="" class="nav-btn">Выход</a>
     <a href="" class="nav-btn reg">Вход</a>
@@ -39,28 +39,28 @@
             <button class="find-btn" onclick="filterSelection('scan')">Сканер</button>
             <input type="text" class="input" name="" id="coastInp" onkeyup="findAtUserCoast();">
         </div>
-        <div class="cards-group">
+        <div class="cards-group" id = 'cards-group'>
             <div class="card jet">
-                <h3 class="filter">Струйный принтер Epson L810</h3>
+                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Струйный принтер Epson L810</a>
                 <img src="../images/epson-L810.jpg" alt=""><br>
                 <p class="coast">150</p>
-                <button class="oblique">В корзину</button>
+                <button class="oblique" onclick = 'addInBasket("001")'>В корзину</button>
             </div>
-            <div class="card mfu">
-                <h3 class="filter">МФУ Canon Pixma</h3>
+            <div class="card mfu" id = 'gd002'>
+                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>МФУ Canon Pixma</a>
                 <img src="../images/canon-mfu.jpg" alt=""><br>
                 <p class="coast">210</p>
-                <button class="oblique">В корзину</button>
-            </div><div class="card laser">
-                <h3 class="filter ">Лазерный принер Canon Pro-100</h3>
+                <button class="oblique" onclick = 'addInBasket("002")'>В корзину</button>
+            </div><div class="card laser" id = 'gd003'>
+                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Лазерный принтер Canon Pro-100</a>
                 <img src="../images/laser-canon.jpg" alt=""><br>
                 <p class="coast">250</p>
-                <button class="oblique">В корзину</button>
-            </div><div class="card scan">
-                <h3 class="filter">Сканер Epson V850</h3>
+                <button class="oblique" onclick = 'addInBasket("003")'>В корзину</button>
+            </div><div class="card scan" id = 'gd004'>
+                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Сканер Epson V850</a>
                 <img src="../images/scan-epson.jpg" alt=""><br>
                 <p class="coast">123</p>
-                <button class="oblique">В корзину</button>
+                <button class="oblique" onclick = 'addInBasket("004")'>В корзину</button>
             </div>
         </div>
         
@@ -68,14 +68,15 @@
 
     <footer class="header-nav">
     <a href="" class="nav-btn ">О нас</a>
-    <a href="" class="nav-btn checked">Каталог</a>
-    <a href="" class="nav-btn">Корзина</a>
-    <a href="" class="nav-btn">Заказы</a>
+    <a href="goods.htm" class="nav-btn checked">Каталог</a>
+    <a href="basket.htm" class="nav-btn">Корзина</a>
+    <a href=""class="nav-btn">Заказы</a>
     <a href="" class="nav-btn">Где нас найти?</a>
     <a href="" class="nav-btn">Выход</a>
     <a href="" class="nav-btn reg">Вход</a>
     <a href="" class="nav-btn reg">Регистрация</a>
     </footer>
 <script src="../scripts/catalog-find.js"></script>
+<script src="../scripts/basket.js"></script>
 </body>
 </html>

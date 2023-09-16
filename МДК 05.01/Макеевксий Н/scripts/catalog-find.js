@@ -25,6 +25,7 @@ function findAtUserCoast(){
             console.log('Del: ' + goodsCoast[i].innerHTML)
         } else if (userCoast == '') {
             filterSelection("all");
+            goodsCoast[i].parentElement.style.display = 'flex';
         } else {
             goodsCoast[i].parentElement.style.display = 'none';
         }
