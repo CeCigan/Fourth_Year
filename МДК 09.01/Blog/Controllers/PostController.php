@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index() {
-        $posts = Post::all();
-        return view('index', ['posts' => $posts]);
+       $posts = Post::orderBy('created_at', 'desc')->get();
+
+       return view('index')->with(['posts' => $posts]);
     }
 }
