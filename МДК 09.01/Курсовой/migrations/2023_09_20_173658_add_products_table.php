@@ -15,13 +15,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('Products', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unique();
             $table->string('prod_name', 50);
-            $table->smallInteger('calories');
-            $table->smallInteger('protein');
-            $table->smallIncrements('carbohydrates');
-            $table->smallInteger('fat');
-
+            $table->smallInteger('calories', false);
+            $table->smallInteger('protein', false);
+            $table->smallInteger('carbohydrates', false); 
+            $table->smallInteger('fat', false);
+            $table->char('dishType', 30);                 //К какому виду дает принадлежит: Веганской, Всеядной и т.п
             
         });
     }
