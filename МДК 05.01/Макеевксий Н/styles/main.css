@@ -13,6 +13,16 @@
   src: url(/fonts/CALIBRII.TTF);
 }
 
+p{
+  font-size: 18px;
+}
+img{
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -141,6 +151,16 @@ header {
   font-size: 20px;
 }
 
+form input[type='submit']{
+  background-color: black;
+  color: white;
+  width: 30%;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
 
 
 
@@ -224,7 +244,59 @@ header {
 
 
 
-/* О товаре: */
-.basket{
+/* Заказы: */
+.orders-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 0 auto;
+  justify-content: space-evenly;
+
+  width: auto;
+  max-width: 90vw;
+  padding: 2%;
+
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  border-radius: 15px;
+
   
+}
+
+.order-block{
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  border-radius: 15px;
+  width: fit-content;
+  max-width: 30vw;
+  padding: 5px;
+  height: min-content;
+}
+
+.order-img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+
+/* Страница контактов */
+.contacts{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.contact-map iframe{
+  width: 60vw;
+  height: 600px;
+}
+
+.contact-info{
+  width: 50%;
+  margin: 0 auto;
+  text-align: start;
+
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  border-radius: 10px;
+  padding: 10px;
 }

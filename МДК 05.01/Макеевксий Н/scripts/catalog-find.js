@@ -20,7 +20,7 @@ function findAtUserCoast(){
     console.log(userCoast);
 
     for(let i = 0; i < goodsCoast.length; i++){
-        if(Number(userCoast) > Number(goodsCoast[i].innerHTML)){
+        if(Number(userCoast) >= Number(goodsCoast[i].innerHTML)){
             goodsCoast[i].parentElement.style.display = 'flex';
             console.log('Del: ' + goodsCoast[i].innerHTML)
         } else if (userCoast == '') {
