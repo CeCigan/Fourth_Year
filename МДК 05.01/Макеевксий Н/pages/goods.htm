@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,31 +8,32 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <title>Copy Star.com</title>
 </head>
+
 <body>
     <header>
         <div class="logo-box">
-          <div class="logo-img">
-            <img src="images/logo.png" alt="" />
-            <h1 class="site-name">Copy Star</h1>
-          </div>
-          <h3 class="lozung">Принтеры по хорошей цене</h3>
+            <div class="logo-img">
+                <img src="images/logo.png" alt="" />
+                <h1 class="site-name">Copy Star</h1>
+            </div>
+            <h3 class="lozung">Принтеры по хорошей цене</h3>
         </div>
     </header>
-  
+
     <!-- Панель навигации -->
     <nav class="header-nav">
-    <a href="../index.htm" class="nav-btn ">О нас</a>
-    <a href="goods.htm" class="nav-btn checked">Каталог</a>
-    <a href="basket.htm" class="nav-btn">Корзина</a>
-    <a href="orders.htm" class="nav-btn">Заказы</a>
-    <a href="" class="nav-btn">Где нас найти?</a>
-    <a href="" class="nav-btn">Выход</a>
-    <a href="" class="nav-btn reg">Вход</a>
-    <a href="" class="nav-btn reg">Регистрация</a>
+        <a href="../index.htm" class="nav-btn ">О нас</a>
+        <a href="goods.htm" class="nav-btn checked">Каталог</a>
+        <a href="basket.htm" class="nav-btn">Корзина</a>
+        <a href="orders.htm" class="nav-btn">Заказы</a>
+        <a href="" class="nav-btn">Где нас найти?</a>
+        <a href="" class="nav-btn">Выход</a>
+        <a href="" class="nav-btn reg">Вход</a>
+        <a href="" class="nav-btn reg">Регистрация</a>
     </nav>
 
-    <main class = 'catalog-main'>
-        <div class="find-field" id = 'find-field'>
+    <main class='catalog-main'>
+        <div class="find-field" id='find-field'>
             <button class="find-btn active" onclick="filterSelection('all')">Показать все</button>
             <button class="find-btn" onclick="filterSelection('laser')">Лазерный</button>
             <button class="find-btn" onclick="filterSelection('jet')">Струйный</button>
@@ -39,46 +41,47 @@
             <button class="find-btn" onclick="filterSelection('scan')">Сканер</button>
             <input type="text" class="input" name="" id="coastInp" onkeyup="findAtUserCoast();">
         </div>
-        <div class="cards-group" id = 'cards-group'>
+        <div class="cards-group" id='cards-group'>
             <div class="card jet">
-                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Струйный принтер Epson L810</a>
+                <a class="filter good-link" href="goodCard.htm" id='gd001'>Струйный принтер Epson L810</a>
                 <img src="../images/epson-L810.jpg" alt=""><br>
                 <p class="coast">150</p>
-                <button class="oblique" onclick = 'addInBasket("001")'>В корзину</button>
+                <button class="oblique" onclick='addInBasket("001")'>В корзину</button>
             </div>
-            <div class="card mfu" id = 'gd002'>
-                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>МФУ Canon Pixma</a>
+            <div class="card mfu" id='gd002'>
+                <a class="filter good-link" href="goodCard.htm" id='gd001'>МФУ Canon Pixma</a>
                 <img src="../images/canon-mfu.jpg" alt=""><br>
                 <p class="coast">210</p>
-                <button class="oblique" onclick = 'addInBasket("002")'>В корзину</button>
+                <button class="oblique" onclick='addInBasket("002")'>В корзину</button>
             </div>
-            <div class="card laser" id = 'gd003'>
-                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Лазерный принтер Canon Pro-100</a>
+            <div class="card laser" id='gd003'>
+                <a class="filter good-link" href="goodCard.htm" id='gd001'>Лазерный принтер Canon Pro-100</a>
                 <img src="../images/laser-canon.jpg" alt=""><br>
                 <p class="coast">250</p>
-                <button class="oblique" onclick = 'addInBasket("003")'>В корзину</button>
+                <button class="oblique" onclick='addInBasket("003")'>В корзину</button>
             </div>
-            <div class="card scan" id = 'gd004'>
-                <a class="filter good-link" href="goodCard.htm" id = 'gd001'>Сканер Epson V850</a>
+            <div class="card scan" id='gd004'>
+                <a class="filter good-link" href="goodCard.htm" id='gd001'>Сканер Epson V850</a>
                 <img src="../images/scan-epson.jpg" alt=""><br>
                 <p class="coast">123</p>
-                <button class="oblique" onclick = 'addInBasket("004")'>В корзину</button>
+                <button class="oblique" onclick='addInBasket("004")'>В корзину</button>
             </div>
         </div>
-        
+
     </main>
 
     <footer class="header-nav">
-    <a href="" class="nav-btn ">О нас</a>
-    <a href="goods.htm" class="nav-btn checked">Каталог</a>
-    <a href="basket.htm" class="nav-btn">Корзина</a>
-    <a href="orders.htm"class="nav-btn">Заказы</a>
-    <a href="" class="nav-btn">Где нас найти?</a>
-    <a href="" class="nav-btn">Выход</a>
-    <a href="" class="nav-btn reg">Вход</a>
-    <a href="" class="nav-btn reg">Регистрация</a>
+        <a href="" class="nav-btn ">О нас</a>
+        <a href="goods.htm" class="nav-btn checked">Каталог</a>
+        <a href="basket.htm" class="nav-btn">Корзина</a>
+        <a href="orders.htm" class="nav-btn">Заказы</a>
+        <a href="" class="nav-btn">Где нас найти?</a>
+        <a href="" class="nav-btn">Выход</a>
+        <a href="" class="nav-btn reg">Вход</a>
+        <a href="" class="nav-btn reg">Регистрация</a>
     </footer>
-<script src="../scripts/catalog-find.js"></script>
-<script src="../scripts/basket.js"></script>
+    <script src="../scripts/catalog-find.js"></script>
+    <script src="../scripts/basket.js"></script>
 </body>
+
 </html>

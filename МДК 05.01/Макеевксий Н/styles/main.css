@@ -60,6 +60,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  
+
   padding-left: 20%;
   padding-right: 20%;
   border-bottom: 2px solid black;
@@ -92,9 +95,7 @@ header {
   background-color: black;
   text-decoration: none;
 }
-.header-nav :last-child {
-  margin-left: -40px;
-}
+
 .oblique {
   border: 1px solid black;
   border-radius: 3px;
@@ -299,4 +300,144 @@ form input[type='submit']{
   border: 1px solid rgba(15, 15, 15, 0.3);
   border-radius: 10px;
   padding: 10px;
+}
+
+
+/* Адаптив */
+@media ((max-width: 1000px) and (min-width: 400px)){
+  /* Панель навигации */
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: large;
+    font-size: 24px;
+  }
+
+  .nav-btn {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Calibri;
+    margin: 10px;
+  }
+  .reg{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 6px 4px 6px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .checked{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 6px 4px 6px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  /* Фомра Регистрация */
+  .registration {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(15, 15, 15, 0.3);
+    border-radius: 15px;
+    margin: 2vh auto;
+    gap: 1vh;
+    padding: 5px;
+    width: 90vw;
+  }
+
+  .registration input{
+    font-size: 24px;
+    padding: 10px;
+  }
+  .registration label{
+    font-size: 20px;
+    margin-right: -5px;
+  }
+  
+  form input[type='submit']{
+    background-color: black;
+    color: white;
+    width: auto;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+
+  /* Каталог товаров */
+  .catalog-main{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .good-link{
+    font-size: large;
+    color: black;
+    font-weight: 500;
+  }
+  .find-btn{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .find-field{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .cards-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    
+  }
+  .card{
+    max-width: 90vw;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+
+  }
+  .card p{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    
+  }
+
+  .card img{
+    max-width: 50%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  .card .oblique{
+    width:100%;
+  }
 }

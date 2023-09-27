@@ -1,129 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Copy Star.com</title>
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header>
-      <div class="logo-box">
-        <div class="logo-img">
-          <img src="images/logo.png" alt="" />
-          <h1 class="site-name">Copy Star</h1>
-        </div>
-        <h3 class="lozung">Принтеры по хорошей цене</h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Copy Star.com</title>
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="logo-box">
+      <div class="logo-img">
+        <img src="images/logo.png" alt="" />
+        <h1 class="site-name">Copy Star</h1>
       </div>
-    </header>
+      <h3 class="lozung">Принтеры по хорошей цене</h3>
+    </div>
+  </header>
 
-    <!-- Панель навигации -->
-    <nav class="header-nav">
-      <a href="" class="nav-btn checked">О нас</a>
-      <a href="pages/goods.htm" class="nav-btn">Каталог</a>
-      <a href="pages/basket.htm" class="nav-btn">Корзина</a>
-      <a href="/pages/orders.htm" class="nav-btn">Заказы</a>
-      <a href="/pages/whereWe.htm" class="nav-btn">Где нас найти?</a>
-      <a href="" class="nav-btn">Выход</a>
-      <a href="" class="nav-btn reg">Вход</a>
-      <a href="/pages/entry.htm" class="nav-btn reg">Регистрация</a>
+  <!-- Панель навигации -->
+  <nav class="header-nav">
+    <a href="" class="nav-btn checked">О нас</a>
+    <a href="pages/goods.htm" class="nav-btn">Каталог</a>
+    <a href="pages/basket.htm" class="nav-btn">Корзина</a>
+    <a href="/pages/orders.htm" class="nav-btn">Заказы</a>
+    <a href="/pages/whereWe.htm" class="nav-btn">Где нас найти?</a>
+    <a href="" class="nav-btn">Выход</a>
+    <a href="" class="nav-btn reg">Вход</a>
+    <a href="/pages/entry.htm" class="nav-btn reg">Регистрация</a>
+    <!-- Администарция -->
+    <a href="pages/addGood.htm" class="nav-btn" id="adminPageSource">Панель админа</a>
+  </nav>
 
-      <!-- Администарция -->
-      <a href="pages/addGood.htm" class="nav-btn">Добавить товар</a>
-    </nav>
-
-    <!-- Главная часть  -->
-    <main>
-      <div class="news-block header">
-        <h2>Новинки компании</h2>
-      </div>
-      <div class="slider ">
-        <div class="item">
-          <a href="" class="previous" onclick="previusSlide()">&#10094</a>
-          <div class="card">
-            <h3>HP LaserJet</h3>
-            <p>Лазерный принтер HP</p>
-            <img src="images/good-img.png" alt="" />
-            <button class="oblique" href = '/pages/goods.htm'>Купить</button >
+  <!-- Главная часть  -->
+  <main>
+    <div class="news-block header">
+      <h2>Новинки компании</h2>
+    </div>
+    <div class="slider ">
+      <div class="item">
+        <a href="" class="previous" onclick="previusSlide()">&#10094</a>
+        <div class="card">
+          <h3>HP LaserJet</h3>
+          <p>Лазерный принтер HP</p>
+          <img src="images/good-img.png" alt="" />
+          <button class="oblique" href='/pages/goods.htm'>Купить</button>
         </div>
         <a href="" class="next" onclick="nextSlide()">&#10095</a>
-        </div>
-
-        <div class="item">
-          <a href="" class="previous" onclick="previusSlide()">&#10094</a>
-          <h3>HP LaserJet</h3>
-          <p>Лазерный принтер HP</p>
-          <img src="images/good-img.png" alt="" />
-          <button class="oblique">Купить</button >
-          <a href="" class="next" onclick="nextSlide()">&#10095</a>
-        </div>
-
-        <div class="item">
-          <a href="" class="previous" onclick="previusSlide()">&#10094</a>
-          <h3>HP LaserJet</h3>
-          <p>Лазерный принтер HP</p>
-          <img src="images/good-img.png" alt="" />
-          <a href="" class="oblique">Купить</a>
-          <a href="" class="next" onclick="nextSlide()">&#10095</a>
-        </div>
-
-        <div class="item">
-          <a href="" class="previous" onclick="previusSlide()">&#10094</a>
-          <h3>HP LaserJet</h3>
-          <p>МФУ HP</p>
-          <img src="images/good-img.png" alt="" />
-          <a href="" class="oblique">Купить</a>
-          <a href="" class="next" onclick="nextSlide()">&#10095</a>
-        </div>
       </div>
 
-      
-
-      <div class="news-block header">
-        <h2>Регистрация</h2>
+      <div class="item">
+        <a href="" class="previous" onclick="previusSlide()">&#10094</a>
+        <h3>HP LaserJet</h3>
+        <p>Лазерный принтер HP</p>
+        <img src="images/good-img.png" alt="" />
+        <button class="oblique">Купить</button>
+        <a href="" class="next" onclick="nextSlide()">&#10095</a>
       </div>
 
-      <form action="" class="registration">
-        <label for="mail"></label>
-        <input type="text" name="mail" id="" placeholder="E-mail" />
+      <div class="item">
+        <a href="" class="previous" onclick="previusSlide()">&#10094</a>
+        <h3>HP LaserJet</h3>
+        <p>Лазерный принтер HP</p>
+        <img src="images/good-img.png" alt="" />
+        <a href="" class="oblique">Купить</a>
+        <a href="" class="next" onclick="nextSlide()">&#10095</a>
+      </div>
 
-        <label for="family"></label>
-        <input type="text" name="family" id="" placeholder="Фамилия" />
+      <div class="item">
+        <a href="" class="previous" onclick="previusSlide()">&#10094</a>
+        <h3>HP LaserJet</h3>
+        <p>МФУ HP</p>
+        <img src="images/good-img.png" alt="" />
+        <a href="" class="oblique">Купить</a>
+        <a href="" class="next" onclick="nextSlide()">&#10095</a>
+      </div>
+    </div>
 
-        <label for="name"></label>
-        <input type="text" name="name" id="" placeholder="Имя" />
 
-        <label for="fathername"></label>
-        <input type="text" name="fathername" id="" placeholder="Отчество" />
 
-        <label for="telephone"></label>
-        <input type="text" name="" id="" placeholder="Номер телефона" />
+    <div class="news-block header">
+      <h2>Регистрация</h2>
+    </div>
 
-        <div style="display: flex; margin: 0 auto;">
-          <input type="checkbox" name="politics"  id="">
-          <label for="politics">Я ознакомился с <a href="https://policies.google.com/privacy?hl=ru">Политикой конфеденциальности</a></label>
-        </div>
+    <form action="" class="registration">
+      <label for="mail"></label>
+      <input type="text" name="mail" id="" placeholder="E-mail" />
 
-        <div style="display: flex; margin: 0 auto;">
-          <input type="checkbox" name="politics"  id="">
-          <label for="politics">Я даю согласие на <a href="https://policies.google.com/privacy?hl=ru">Обработку персональных данных</a></label>
-        </div>
-        
-        <input type="submit" class="" value="Зарегистрироваться">
-      </form>
-    </main>
-    <footer class="header-nav">
-      <a href="" class="nav-btn checked">О нас</a>
-      <a href="pages/goods.htm" class="nav-btn">Каталог</a>
-      <a href="pages/basket.htm" class="nav-btn">Корзина</a>
-      <a href="/pages/orders.htm" class="nav-btn">Заказы</a>
-      <a href="/pages/whereWe.htm" class="nav-btn">Где нас найти?</a>
-      <a href="" class="nav-btn">Выход</a>
-      <a href="" class="nav-btn reg">Вход</a>
-      <a href="/pages/entry.htm" class="nav-btn reg">Регистрация</a>
-    </footer>
-    <script src = 'scripts/slider.js'></script>
-  </body>
+      <label for="family"></label>
+      <input type="text" name="family" id="" placeholder="Фамилия" />
+
+      <label for="name"></label>
+      <input type="text" name="name" id="" placeholder="Имя" />
+
+      <label for="fathername"></label>
+      <input type="text" name="fathername" id="" placeholder="Отчество" />
+
+      <label for="telephone"></label>
+      <input type="text" name="" id="" placeholder="Номер телефона" />
+
+      <div style="display: flex; margin: 0 auto;">
+        <input type="checkbox" name="politics" id="">
+        <label for="politics">Я ознакомился с <a href="https://policies.google.com/privacy?hl=ru">Политикой
+            конфеденциальности</a></label>
+      </div>
+
+      <div style="display: flex; margin: 0 auto;">
+        <input type="checkbox" name="politics" id="">
+        <label for="politics">Я даю согласие на <a href="https://policies.google.com/privacy?hl=ru">Обработку
+            персональных данных</a></label>
+      </div>
+
+      <input type="submit" class="" value="Зарегистрироваться">
+    </form>
+  </main>
+  <footer class="header-nav">
+    <a href="" class="nav-btn checked">О нас</a>
+    <a href="pages/goods.htm" class="nav-btn">Каталог</a>
+    <a href="pages/basket.htm" class="nav-btn">Корзина</a>
+    <a href="/pages/orders.htm" class="nav-btn">Заказы</a>
+    <a href="/pages/whereWe.htm" class="nav-btn">Где нас найти?</a>
+    <a href="" class="nav-btn">Выход</a>
+    <a href="" class="nav-btn reg">Вход</a>
+    <a href="/pages/entry.htm" class="nav-btn reg">Регистрация</a>
+  </footer>
+  <script src='scripts/slider.js'></script>
+</body>
+
 </html>
