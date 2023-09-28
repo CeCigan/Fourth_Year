@@ -193,26 +193,28 @@ form input[type='submit']{
   color: white;
   transition: 0.2s;
 }
+
 .cards-group{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+
   width: auto;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  gap: 20px;
   
 }
 .card{
-  width: 20%;
-  display: block;
-  border: 2px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content:space-around;
 
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .card p{
   font-size: 18px;
@@ -231,6 +233,10 @@ form input[type='submit']{
   width:100%;
 }
 
+.show {
+  display:flex;
+}
+
 .btn-find .active{
   border: 1px solid black;
   border-radius: 10px;
@@ -238,9 +244,6 @@ form input[type='submit']{
   color: white;
   background-color: black;
   text-decoration: none;
-}
-.show {
-  display:flex;
 }
 
 

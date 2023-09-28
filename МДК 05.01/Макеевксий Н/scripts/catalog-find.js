@@ -30,7 +30,7 @@ function findAtUserCoast(){
             goodsCoast[i].parentElement.style.display = 'none';
         }
 
-        console.log([goodsCoast[i].innerHTML])
+        // console.log([goodsCoast[i].innerHTML])
     }
 }
 

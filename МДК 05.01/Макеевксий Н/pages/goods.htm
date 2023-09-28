@@ -32,7 +32,7 @@
         <a href="" class="nav-btn reg">Регистрация</a>
     </nav>
 
-    <main class='catalog-main'>
+    <main class='catalog-main' id = 'catalog-main'>
         <div class="find-field" id='find-field'>
             <button class="find-btn active" onclick="filterSelection('all')">Показать все</button>
             <button class="find-btn" onclick="filterSelection('laser')">Лазерный</button>
@@ -42,26 +42,26 @@
             <input type="text" class="input" name="" id="coastInp" onkeyup="findAtUserCoast();">
         </div>
         <div class="cards-group" id='cards-group'>
-            <div class="card jet">
+            <div class="card jet" id='gd001'>
                 <a class="filter good-link" href="goodCard.htm" id='gd001'>Струйный принтер Epson L810</a>
                 <img src="../images/epson-L810.jpg" alt=""><br>
                 <p class="coast">150</p>
                 <button class="oblique" onclick='addInBasket("001")'>В корзину</button>
             </div>
             <div class="card mfu" id='gd002'>
-                <a class="filter good-link" href="goodCard.htm" id='gd001'>МФУ Canon Pixma</a>
+                <a class="filter good-link" href="goodCard.htm" id='gd002'>МФУ Canon Pixma</a>
                 <img src="../images/canon-mfu.jpg" alt=""><br>
                 <p class="coast">210</p>
                 <button class="oblique" onclick='addInBasket("002")'>В корзину</button>
             </div>
             <div class="card laser" id='gd003'>
-                <a class="filter good-link" href="goodCard.htm" id='gd001'>Лазерный принтер Canon Pro-100</a>
+                <a class="filter good-link" href="goodCard.htm" id='gd003'>Лазерный принтер Canon Pro-100</a>
                 <img src="../images/laser-canon.jpg" alt=""><br>
                 <p class="coast">250</p>
                 <button class="oblique" onclick='addInBasket("003")'>В корзину</button>
             </div>
             <div class="card scan" id='gd004'>
-                <a class="filter good-link" href="goodCard.htm" id='gd001'>Сканер Epson V850</a>
+                <a class="filter good-link" href="goodCard.htm" id='gd004'>Сканер Epson V850</a>
                 <img src="../images/scan-epson.jpg" alt=""><br>
                 <p class="coast">123</p>
                 <button class="oblique" onclick='addInBasket("004")'>В корзину</button>
@@ -82,6 +82,13 @@
     </footer>
     <script src="../scripts/catalog-find.js"></script>
     <script src="../scripts/basket.js"></script>
+    <script src="../scripts/goods-load.js"></script>
+    <script src="../scripts/site-goods.js"></script>
+    <script>
+    window.addEventListener('load', () => {
+        catalog_load();
+    });
+    </script>
 </body>
 
 </html>
