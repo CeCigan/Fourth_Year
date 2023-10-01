@@ -13,13 +13,12 @@ function catalog_load(){
 
         catalog_goods.push(
             '<div class="card '+itemPrefix +' show" id="gd00'+itemId+'">'+
-                '<a class="filter good-link" href="goodCard.htm" id="gd00'+itemId +'">'+itemName+'</a>' +
-                '<img src="'+itemImage+'" alt=""><br>' +
+                '<a class="filter good-link" href="goodCard.htm" id="gd00'+itemId +'" onclick="showGood("00'+itemId+'");">'+itemName+'</a>' +
+                '<img src="'+itemImage+'" alt="" onclick="showGood("00'+itemId+'");"><br>' +
                 '<p class="coast">'+itemCoast+'</p>'+
                 '<button class="oblique" onclick="addInBasket(`00'+itemId+'`)">В корзину</button>'+
             '</div>'
         );
-
         content_block.innerHTML += catalog_goods[i];
     }
 }
