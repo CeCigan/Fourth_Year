@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>Здоровая еда.рф - Каталог блюд</title>
+  </head>
+  <body>
+  <!-- Форма регистрации -->
+    <div class="w-full h-[150%] absolute hidden" id = 'divReg'>
+      <form action="" id="form" class="my-10 w-3/12 m-auto left-2/4 top-2/4 p-3 bg-gray-200 flex flex-col border-2 rounded-md z-20">
+          <button onclick="closeForm();">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" 
+              class="w-6 h-6 ml-auto relative cursor-pointer hover:fill-red-500">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg> 
+          </button>
+          <h2 class="text-center font-semibold text-lg">Регистрация</h2>
+              
+          <input type="text" id="name" placeholder="Ваше имя" required class=""/>
+          <input type="email" id="surname" placeholder="Ваш email" required />
+          <input
+            type="tel"
+            id="telephone"
+            placeholder="Ваш телефон"
+            maxlength="18"
+          />
+          <input type="password" id="password" placeholder="Пароль" required />
+          <input
+            type="password"
+            id="passwordCheck"
+            placeholder="Пароль еще раз"
+            required
+            onchange="validate();"
+          /><br />
+
+          <input type="submit" 
+          id="submit" 
+          value="Регистрация" 
+          class="mt-3 m-auto text-center justify-center h-12 
+                  font-normal tracking-wide bg-green-700 text-white transition duration-200 rounded shadow-md
+                  hover:bg-green-500 focus:shadow-lg focus:outline-none cursor-pointer"/>
+      </form>
+  </div>
+
+    <!-- Навигация -->
+    <header class="m-auto w-10/12 bg-green-700 z-10 rounded-ee-xl rounded-es-xl" id = 'header'>
+      <nav class="items-center h-20 w-11/12 m-auto flex justify-around header">
+          <div class="flex logos">
+              <img src="./images/salad.ico" class="h-10" alt="" width="40px">
+              <p class="h-10 ml-3 flex items-center font-semibold text-green-300">Здорово Питаться.рф</p>
+          </div>
+          <div class="nav">
+              <a href="index.htm" class="nav-btn transition duration-200">Главная</a>
+              <a class="nav-btn transition duration-200">Каталог блюд</a>
+              <a onclick="showForm();" class="nav-btn transition duration-200 cursor-pointer">Попробовать бесплатно</a>
+          </div>
+      </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="w-8/12 m-auto flex flex-col justify-center ">
+      <div class="p-3 mt-10 mb-10 info m-auto w-3/4 text-sm text leading-5 text-blue-700 bg-blue-300 border-transparent rounded-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 float-left fill-blue-700 mr-1">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+        </svg>
+        <p>
+          Этот браузер продуктов питания позволяет сортировать все наши продукты
+          по десяткам различных питательных веществ и анализировать плотность
+          питательных веществ, отображая пищевую ценность «на 100 г». 
+          Хотите добавить блюдо в свой план? Добавьте
+          его в избранное, и он появится в вашем банке еды на странице
+          планировщика.
+        </p>
+      </div>
+
+      <div class="pages flex w-3/12 m-auto p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+        </svg>
+         Страница 1 из 50+ 
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+        </svg>
+      </div>
+
+      <!-- Сайдбар с параметрами -->
+      <div class="food-tb flex flex-row justify-between ">
+        <div class="mr-10">
+          <form action="" method="" class="sidebar-find">
+            <input type="text" name="" id="" placeholder="Найти рецепт" />
+            <button type="submit" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>   
+            </button>         
+          </form>
+          <h4 class="mt-3 text-xl">Тип</h4>
+          <ul class="lists">
+            <li><button href="">Рецепты</button></li>
+            <li><button href="">Основные блюда</a></li>
+            <li><button href="">Готовые блюда</button></li>
+            <li><button href="">Фирменные блюда</a></li>
+          </ul>
+
+          <h4 class="mt-3 text-xl">Категории</h4>
+          <ul class="lists">
+            <li><button href="">Все</button></li>
+            <li><button href="">Напитки</button></li>
+            <li><button href="">Дисерты</button></li>
+            <li><button href="">Мясные</button></li>
+            <li><button href="">Салаты</button></li>
+            <li><button href="">Бутерброды</button></li>
+            <li><button href="">Супы</button></li>
+            <li><button href="">Мучное</button></li>
+            <li><button href="">Другое</button></li>
+            <li><button href="">Главные блюда</button></li>
+            <li><button href="">Вторые блюда</button></li>
+          </ul>
+        </div>
+
+        
+      <!-- Таблица с блюдами -->
+      <table class="result-table">
+        <tr class="td-title">
+          <td>Изображения</td>
+          <td>Название</td> 
+          <td>Подробная информация</td> 
+          <td class="border-none">Действия</td>
+        </tr>
+
+        <tr class="td-title mt-3" id='diet-tb'>
+          <td class="food-pic"><a href=""><img src="images//chiken_with_lemon.jpg" alt="" class=""></a></td>
+          <td class="h-full">Жареная курочка с лимоном</td>
+          <td class="h-full">
+            Масса: 230 грамм <br>
+            <b class="mt-3">На 100 грамм приходится</b>
+            Калорийность: 28 ккал <br>
+            Белки: 9.3 мг/грамм <br>
+            Жиры: 0.9 мг
+          </td>
+          <td class="border-none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-auto w-10 h-10 fill-green-700 active:fill-green-300 cursor-pointer">
+            <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+          </svg>
+          </td>
+        </tr>
+        
+        
+        <tr class="td-title mt-3" id='diet-tb'>
+          <td class="food-pic"><a href=""><img src="images//Salat-tunez-pomidor.jpg" alt="" class=""></a></td>
+          <td class="h-full">Салат с тунцом и помидорами</td>
+          <td class="h-full">
+            Масса: 300 грамм <br>
+            <b>На 100 грамм приходится</b>
+            Калорийность: 39.3 ккал <br>
+            Белки: 6.5 мг <br>
+            Жиры: 0,4 мг <br>
+            Углеводы: 2.3 гр <br>
+          </td>
+          <td class="border-none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-auto w-10 h-10 fill-green-700 active:fill-green-300 cursor-pointer">
+            <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+          </svg>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="w-[48rem] mt-10 m-auto flex flex-col p-3 bg-green-700 border-transparent rounded-xl">
+      <!-- Панель навигации + кнопка "На вврех" -->
+      <div class="h-12 flex justify-around py-3">
+          <button class="nav-btn">Главная</button>
+          <button class="nav-btn">Каталог диет</button>
+          <button class="nav-btn mr-20">Попробовать бесплатно</button>
+          <a class="nav-btn pageUp flex flex-col items-center cursor-pointer" id = 'up' onclick="">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+              </svg>          
+          </a>
+      </div>
+      <!-- Логотип футера -->
+      <div class="mt-7 ml-6 logo">
+        <div class="flex logos">
+          <img src="./images/salad.ico" class="h-10" alt="" width="40px">
+          <p class="h-10 ml-3 flex items-center font-semibold text-green-300">Здорово Питаться.рф</p>
+        </div>
+      </div>
+
+      <!-- Соц-сети -->
+      <div class="mt-3 socials flex flex-row items-center justify-around">
+          <p class="mr-96  text-green-300">Связаться с нами:</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>              
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>              
+      </div>
+  </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  <script src = 'js/scroll.js'></script>  
+  <script src = 'js/foodTable.js'></script>  
+  <script src = 'js/form.js'></script>  
+</html>

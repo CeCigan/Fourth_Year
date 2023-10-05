@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--image-width: 2.75rem;
+	--diet-btn-width: 10rem;
+	--food-pic-width: 24rem;
+	--food-pic-height: 24rem;
+}
+
+
+
+/* Анимации */
+@keyframes horiz {
+	0% {transform: translateX(-150%);}
+	100% {transform: translateY(0);}
+}
+@keyframes vert {
+	0% {transform: translateY(-150%);}
+	100% {transform: translateX(0);}
+}
+@keyframes opacity {
+	0% {opacity: 0%;}
+	100% {opacity: 100%;}
+}
+*{
+	font-size: large;
+}
+/* Порядок классов:
+    |\\ Ширина
+    |\\ Отображение на странице (flex, box и т.д)
+    |\\ Отступы
+    |\\ Цвета
+    |\\ Стиль текста, если имеется
+    |\\ */
+
+/* Направление Margin / Padding:
+    Сверху-вниз, слева на право */
+
+/* Форма регистрации */
+#form input{
+	@apply p-1 my-2;
+}
+
+#form {
+	transform: translateX(-150%);
+	animation: vert 1s forwards;
+}
+
+#divReg{
+	background: rgba(209, 213, 219, 0.9);
+	animation: opacity 1s forwards;
+}
+
+/* Панель навигации в шапку */
+.nav-btn {
+	@apply mx-4 py-2 px-5 bg-green-300 text-green-700 
+	border border-transparent rounded-lg
+	hover:text-white hover:bg-green-500;
+}
+
+footer .nav-btn{
+	@apply h-fit py-2 px-5 bg-green-300 text-green-700 border border-transparent rounded-lg hover:text-white hover:bg-green-500;
+}
+
+/* Калькулятор диет */
+.diet-calculator {
+	width: calc(var(--diet-btn-width) * 6);
+}
+
+/* Блок с кнопками выбора */
+.calculator {
+	@apply w-3/4 h-[16rem] my-10 m-auto flex justify-center items-center border-[#ebebebaa] 
+    rounded-2xl shadow-slate-300 shadow-lg;
+}
+
+/* Кнопки выьбора диеты */
+.diet {
+	@apply min-w-[10rem] flex flex-col items-center 
+	hover:bg-green-600 hover:text-white border-transparent 
+	 rounded-xl transition-colors;
+}
+
+/* Картинки кнопок */
+.diet img {
+	width: var(--image-width);
+	margin: 0.2rem auto;
+}
+
+/* Карточка еды */
+.result-box {
+	animation: horiz 1s forwards;
+	transform: translateX(-150%);
+}
+  
+/* Карточка блюда */
+.food-info {
+	box-shadow: 0px 12px 40px 2px rgba(69, 69, 69, 0.25);
+}
+
+.good svg {
+	@apply ml-80;
+}
+
+.reload svg {
+	margin: 0;
+}
+
+.food-pic {
+	position: relative;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
+
+.food-pic img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border: 2px transparent;
+	border-radius: 10px;
+}
+
+.foods:hover {
+	box-shadow: 4px 4px 22px 3px rgba(34, 168, 66, 0.5);
+	transition: all 0.2s ease-out;
+}
+
+
+
+/* Отзывы */
+.reviews{
+	@apply max-w-3xl p-5 bg-green-700 border border-transparent rounded-2xl;
+	margin: 0 auto;
+}
+
+/* Картинки в отзывах */
+.review img {
+	@apply w-72;
+	border: 1px transparent;
+	border-radius: 1rem;
+}
+
+/* Кнопка в отзывах */
+.reviews button {
+	position: relative;
+	margin-left: 40%;
+	@apply px-4 py-3 bg-green-300 text-green-700 border border-transparent rounded-lg hover:text-white hover:bg-green-500;
+}
+
+/* Текст отзыва */
+.review-text {
+	@apply ml-5 mr-5;
+}
+
+/* Подвал */
+footer .socials svg{
+	@apply text-green-300;
+}
+
+
+
+/* Список фильтров на странице с блюдами */
+.sidebar-find{
+	@apply w-fit p-1 flex border-2 border-green-500 rounded-lg;
+}
+/* Стили формы поиска */
+.sidebar-find button{
+	@apply p-1 border-l-2 border-green-500;
+}
+.sidebar-find input{
+	@apply w-28 p-1 mr-1;
+}
+
+
+
+.lists li{
+	@apply w-fit mt-1 text-blue-500 underline text-lg indent-5 border border-transparent hover:border-gray-100;
+}
+
+
+/* Таблица блюд */
+.result-table{
+	@apply w-full;
+}
+
+/* Строка таблицы */
+.result-table tr{
+	@apply ml-5 flex justify-between;
+}
+
+/* Ячейка таблциы */
+.td-title td{
+	@apply w-full p-3 text-center border-r-2;
+}
+
+/* Название блюда */
+.td-title{
+	@apply border-2 rounded-xl items-center;
+}
+
