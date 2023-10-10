@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +14,14 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+// Роутинг переключения страниц:
 Route::get('/', function () {
     return view('main');
-});
-Route::get('/diets', function(){
-    return view('diets');
-});
+})->name('main');
 
-Route::get('/login', [AuthController::class, 'getForm']);
+Route::get('/diets', function () {
+    return view('diets');
+})->name('diets');
+
+//Роутинг загрузки контента
+Route::get('/diets', [ContentController::class, 'loadFoods']);

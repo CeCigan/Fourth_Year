@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('name', 50);
             $table->char('description');
             $table->char('instructions');
-            
-            
         });
     }
 
