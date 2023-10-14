@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    font-family: 'Trueno-Simple';
+    font-size: large;
+}
+
+/* Шрифты */
+@font-face {
+    font-family: 'Trueno-Simple';
+    src: url('/fonts/trueno-font/TruenoLight-E2pg.otf');
+}
+
+@font-face {
+    font-family: 'Hussar-Bold';
+    src: url('/fonts/hussar-font/HussarBold-7mRE.otf');
+}
+
+
+/* Шапка с логотипом */
+header{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items:center;
+}
+
+/* Панель навигации */
+nav ul{
+    /* background-color: darkcyan; */
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    width: auto;
+    max-width: 72vw;
+}
+nav li{
+    border: 2px solid darkcyan;
+    background-color: darkcyan;
+    border-radius: 10px;
+    
+    padding: 9px;
+    cursor: pointer;
+}
+
