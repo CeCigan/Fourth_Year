@@ -5,6 +5,37 @@
 
     font-family: 'Trueno-Simple';
     font-size: large;
+
+}
+:root{
+    /* Цвет кнопок при наводке */
+    --cyan-hover-color:rgb(15, 172, 172);
+
+    /* Главный цвет сайта */
+    --main-site-color: rgb(0, 139, 139);
+
+    /* Цвет фона */
+    --bg-site-color: rgb();
+}
+
+/* Кнопки */
+/* Стнадартная кнопка сайта */
+button{
+    cursor: pointer;
+}
+button:hover, nav ul li:hover{
+    transition: all 0.3s;
+    background-color: var(--cyan-hover-color);
+    border: 1px solid var(--cyan-hover-color);
+    border-radius: 8px;
+}
+.btn-def{
+    background-color: rgb(0, 139, 139);
+    color: white;
+
+    border-radius: 8px;
+    
+    padding: 5px;
 }
 
 /* Шрифты */
@@ -28,22 +59,31 @@ header{
 }
 
 /* Панель навигации */
+nav{
+    margin: 1vh 0 3vh 0;
+}
 nav ul{
     /* background-color: darkcyan; */
-
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
 
     width: auto;
     max-width: 72vw;
+
+    margin: 0 auto;
 }
 nav li{
-    border: 2px solid darkcyan;
-    background-color: darkcyan;
+    border: 2px solid var(--main-site-color);
+    background-color: var(--main-site-color);
     border-radius: 10px;
     
+    text-decoration: none;
+
     padding: 9px;
     cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 

@@ -1,6 +1,80 @@
+:root{
+    /* Цвет кнопок при наводке */
+    --cyan-hover-color:rgb(15, 172, 172);
+
+    /* Главный цвет сайта */
+    --main-site-color: rgb(0, 139, 139);
+}
+/* Стили заголовков */
+h3{
+    width: 100%;
+
+    text-align: center;
+    margin: 2vh 0 1vh 0;
+}
+
+
+
+/* Блок контактов на главнйо */
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+}
+
 /* Стили слайдера */
 .slider{
-    border: 1px solid darkcyan;
+    border: 1px solid var(--main-site-color);
+    border-radius: 10px;
+
+    min-width: fit-content;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+/* Стили слайдов в слайере */
+.slide{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    box-sizing: content-box;
+    height: 100%;
+}
+.slide img{
+    width: 300px;
+    height: auto;
+    max-height: 240px;
+}
 
 
+/* Стиили состояния */
+.hidden{
+    display: none;
+}
+
+/* Форма регистрации */
+.index-form{
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    max-width: 60vw;
+
+    margin: 0 auto;
+}
+.index-form input{
+    border: 1px solid var(--main-site-color);
+    border-radius: 5px;
+    padding: 3px;
+}
+.index-form .btn-form{
+    margin-top: 1vh;
+}
+.index-form label{
+    margin-top: 1vh;
 }

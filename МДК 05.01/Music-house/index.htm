@@ -8,6 +8,12 @@
     <title>Music-house.com</title>
 </head>
 <body>
+    <!-- Часть с контактами -->
+    <section class="contacts">
+        <p>Наш адресс: г.Каменск-Уральский, ул.БПК, д7б</p>
+        <p>8-900-435-23-12</p>
+    </section>
+
     <!-- Логотип м слоган -->
     <header>
         <img src="images/logo.png" alt="">
@@ -28,18 +34,39 @@
     <main>
         <div class="slider">
             <div class="slide">
-                <img src="images/eef58e896eb2b75fa6526e15a30c74f4.png" alt="">
                 <p>Новая синтерзатор Impact LX48+</p>
+                <img src="images/eef58e896eb2b75fa6526e15a30c74f4.png" alt="">
+                <button class="btn-def" style = 'border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;'>В корзину</button>
             </div>
-            <div class="slide">
-                <img src="images/79e55aa1c543790678deeae180b51575.jpeg" alt="">
+            <div class="hidden slide">
                 <p><b>Новинка!</b>Классические музыкальные инструменты теперь у нас</p>
+                <img src="images/79e55aa1c543790678deeae180b51575.jpeg" alt="">
+                <button class="btn-def" style = 'border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;'>В корзину</button>
             </div>
-            <div class="slide">
-                <img src="images/b39e8882d68fed2dce3984d12319718a.png" alt="">
+            <div class="hidden slide">
                 <p>Новая услуга! Настройка инструмента прямо после покупки!</p>
+                <img src="images/b39e8882d68fed2dce3984d12319718a.png" alt="">
+                <button class="btn-def" style = 'border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;'>В корзину</button>
             </div>
         </div>
+
+
+        <form class="index-form">
+            <h3>Создать личный кабинет</h3>
+            <label for="mail">Ваша почта</label>
+            <input type="text" name="mail">
+
+            <label for="mail">Как нам к вам обращаться?</label>
+            <input type="text" name="mail">
+
+            <label for="password">Придумайте пароль</label>
+            <input type="text" name="password">
+
+            <label for="passwordAuth">Подвердите пароль</label>
+            <input type="text" name="passwordAuth">
+
+            <button onclick="" class = 'btn-def btn-form'>Зарегистрироваться</button>
+        </form>
     </main>
 </body>
 </html>
