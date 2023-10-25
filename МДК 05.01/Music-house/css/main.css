@@ -1,11 +1,33 @@
+/* 
+    | Главный файл стилей
+    |
+    |
+    |
+*/
 *{
     padding: 0;
     margin: 0;
     border: 0;
 
-    font-family: 'Trueno-Simple';
+    font-family: 'Shentox-Regular';
     font-size: large;
 
+    background-color: var(--bg-site-color);
+
+}
+/* Шрифты сайта */
+@font-face {
+    font-family: 'Shentox-Regular';
+    src: url('/fonts/Shentox-Regular.ttf');
+}
+@font-face {
+    font-family: 'Minecraft-Ten';
+    src: url('/fonts/minecraft-ten.ttf');
+}
+
+/* Стили заголовков */
+h1, h2, h3, h4{
+    font-family:'Minecraft-Ten';
 }
 :root{
     /* Цвет кнопок при наводке */
@@ -16,6 +38,9 @@
 
     /* Цвет фона */
     --bg-site-color: rgb();
+
+    /* Тени карточек */
+    --site-card-shadow: 0px 8px 20px -7px var(--main-site-color);
 }
 
 /* Кнопки */
@@ -23,8 +48,8 @@
 button{
     cursor: pointer;
 }
-button:hover, nav ul li:hover{
-    transition: all 0.3s;
+button:hover, nav ul li:hover, .btn-def:hover{
+    transition: all 0.2s;
     background-color: var(--cyan-hover-color);
     border: 1px solid var(--cyan-hover-color);
     border-radius: 8px;
@@ -33,34 +58,55 @@ button:hover, nav ul li:hover{
     background-color: rgb(0, 139, 139);
     color: white;
 
+    border: 1px solid var(--main-site-color);
     border-radius: 8px;
     
     padding: 5px;
+    cursor: pointer;
+
+    text-align: center;
+    vertical-align: baseline;
+
+    user-select: none;
+    -moz-user-select: none;
+
+    transition: all 0.2s;
+
 }
 
-/* Шрифты */
-@font-face {
-    font-family: 'Trueno-Simple';
-    src: url('/fonts/trueno-font/TruenoLight-E2pg.otf');
+/* Блок контактов на главнйо */
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+
+    background-color: var(--main-site-color);
+    color: white;
 }
-
-@font-face {
-    font-family: 'Hussar-Bold';
-    src: url('/fonts/hussar-font/HussarBold-7mRE.otf');
-}
-
-
 /* Шапка с логотипом */
 header{
+    width: auto;
+    max-width: 80%;
+
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     text-decoration: none;
     align-items:center;
+
+    user-select: none;
+    -moz-user-select: none;
 }
 
 /* Панель навигации */
 nav{
     margin: 1vh 0 3vh 0;
+
+    /* border: 1px solid var(--main-site-color);
+    border-radius: 8px; */
+
+    text-decoration: none;
 }
 nav ul{
     /* background-color: darkcyan; */
@@ -71,9 +117,11 @@ nav ul{
     max-width: 72vw;
 
     margin: 0 auto;
+
+    list-style-type:none
 }
 nav li{
-    border: 2px solid var(--main-site-color);
+    border: 1px solid var(--main-site-color);
     background-color: var(--main-site-color);
     border-radius: 10px;
     

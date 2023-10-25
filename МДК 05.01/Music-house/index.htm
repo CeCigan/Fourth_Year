@@ -18,16 +18,16 @@
     <header>
         <img src="images/logo.png" alt="">
         <!-- <h1>Music House</h1> -->
-        <p style="font-size: larger;">Лучшие музкальные инструменты только у нас</p>
+        <h3 style="font-size: larger;">Лучшие музыкальные инструменты только у нас</h3>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.htm">О нас</a></li>
-            <li><a href="/pages/catalog.htm">Каталог</a></li>
-            <li><a href="/pages/about.htm">Где нас найти</a></li>
-            <li><a href="/pages/form.htm">Зарегистрироваться</a></li>
-            <li><a href="/pages/form.htm">Войти</a></li>
+            <li><a href="pages/catalog.htm">Каталог</a></li>
+            <li><a href="pages/about.htm">Где нас найти</a></li>
+            <li><a href="pages/form.htm">Зарегистрироваться</a></li>
+            <li><a href="pages/form.htm">Войти</a></li>
         </ul>
     </nav>
 
@@ -50,14 +50,20 @@
             </div>
         </div>
 
-
+        <!-- Форма регистрации на сайте -->
         <form class="index-form">
             <h3>Создать личный кабинет</h3>
             <label for="mail">Ваша почта</label>
-            <input type="text" name="mail">
+            <input type="text" name="mail" required>
 
-            <label for="mail">Как нам к вам обращаться?</label>
-            <input type="text" name="mail">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" required>
+
+            <label for="login">Ваше фамилия</label>
+            <input type="text" name="mail" required>
+
+            <label for="login">Ваше фамилия</label>
+            <input type="text" name="mail" required>
 
             <label for="password">Придумайте пароль</label>
             <input type="text" name="password">
