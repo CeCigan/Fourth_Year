@@ -1,0 +1,111 @@
+h3 {
+  width: 100%;
+
+  text-align: center;
+  margin: 2vh 0 1vh 0;
+}
+
+/* Стили слайдера */
+.slider {
+  border: 1px solid var(--main-site-color);
+  border-radius: 10px;
+
+  width: auto;
+  max-width: min-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+/* Стили слайдов в слайере */
+.slide {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: auto;
+  max-width: 100%;
+
+  box-sizing: content-box;
+  height: 100%;
+
+  animation: horiz 1s forwards;
+  animation-timing-function: cubic-bezier(0.1, -0.4, 0.3, 0);
+}
+/* Текст слайдер */
+.slide p {
+  text-align: center;
+}
+.slide img {
+  width: 300px;
+  height: auto;
+  max-height: 240px;
+}
+/* Кнопка покупки в слайдере */
+.slide .btn-def {
+  width: 100%;
+}
+/* Кнопки слайдера */
+.next-button,
+.prev-button {
+  padding: 4px;
+
+  border: 1px solid transparent;
+}
+
+/* Стиили состояния */
+.hidden {
+  display: none;
+}
+
+/* Форма регистрации */
+.index-form {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  max-width: 60vw;
+
+  margin: 0 auto;
+}
+.index-form input,
+.index-form textarea {
+  border: 1px solid var(--main-site-color);
+  border-radius: 5px;
+  padding: 3px;
+}
+.index-form textarea:active {
+  border: 2px solid var(--main-site-color);
+}
+.index-form .btn-form {
+  margin-top: 1vh;
+}
+.index-form label {
+  margin-top: 1vh;
+}
+
+/* Панель действий */
+.form-select-type {
+  border: 2px solid var(--main-site-color);
+  border-radius: 8px;
+
+  width: fit-content;
+
+  margin: 0 auto;
+}
+.form-select-type button {
+  width: 30vw;
+  border: 1px solid var(--main-site-color);
+}
+.form-select-type .btn-before {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.form-select-type .btn-after {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}

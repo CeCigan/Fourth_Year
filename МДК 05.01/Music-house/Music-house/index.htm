@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Music-house.com</title>
+  </head>
+  <body>
+    <!-- Часть с контактами -->
+    <section class="contacts">
+      <p>Наш адресс: г.Каменск-Уральский, ул.БПК, д7б</p>
+      <p>8-900-435-23-12</p>
+    </section>
+
+    <!-- Логотип м слоган -->
+    <header>
+      <img src="images/logo.png" alt="" />
+      <!-- <h1>Music House</h1> -->
+      <h3 style="font-size: larger">
+        Лучшие музыкальные инструменты только у нас
+      </h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.htm">О нас</a></li>
+        <li><a href="pages/catalog.htm">Каталог</a></li>
+        <li><a href="pages/about.htm">Где нас найти</a></li>
+        <li><a href="pages/admin.htm">Админка</a></li>
+        <li><a href="pages/form.htm">Зарегистрироваться</a></li>
+        <li><a href="pages/form.htm">Войти</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="slider">
+        <button class="prev-button"><</button>
+        <div class="slide">
+          <p>Новая синтерзатор Impact LX48+</p>
+          <img src="images/accordion_1.jpeg" alt="" />
+          <button
+            class="btn-def"
+            style="
+              border-bottom-right-radius: 8px;
+              border-bottom-left-radius: 8px;
+            "
+          >
+            В корзину
+          </button>
+        </div>
+        <div class="slide">
+          <p>
+            <b>Новинка!</b>Классические музыкальные инструменты теперь у нас
+          </p>
+          <img src="images/guitar_classic_1.jpeg" alt="" />
+          <button
+            class="btn-def"
+            style="
+              border-bottom-right-radius: 8px;
+              border-bottom-left-radius: 8px;
+            "
+          >
+            В корзину
+          </button>
+        </div>
+        <div class="slide">
+          <p>Новая услуга! Настройка инструмента прямо после покупки!</p>
+          <img src="images/synth_1.jpeg" alt="" />
+          <button
+            class="btn-def"
+            style="
+              border-bottom-right-radius: 8px;
+              border-bottom-left-radius: 8px;
+            "
+          >
+            В корзину
+          </button>
+        </div>
+        <button class="next-button">></button>
+      </div>
+
+      <!-- Панель действи -->
+      <div class="form-select-type">
+        <button class="btn-before">Зарегистрироваться</button>
+        <button class="btn-after">Войти</button>
+      </div>
+
+      <!-- Форма регистрации -->
+      <div class="reg-form">
+        <form class="index-form">
+          <h3>Создать личный кабинет</h3>
+          <label for="mail">Ваша почта</label>
+          <input type="text" name="mail" required />
+
+          <label for="name">Ваше имя</label>
+          <input type="text" name="name" required />
+
+          <label for="login">Ваша фамилия</label>
+          <input type="text" name="mail" required />
+
+          <label for="login">Ваше отчество</label>
+          <input type="text" name="mail" />
+
+          <label for="password">Придумайте пароль</label>
+          <input type="text" name="password" />
+
+          <label for="passwordAuth">Подвердите пароль</label>
+          <input type="text" name="passwordAuth" />
+
+          <button onclick="" class="btn-def btn-form">
+            Зарегистрироваться
+          </button>
+        </form>
+
+        <!-- Форма входа -->
+        <div class="login"><div class="reg-form">
+        <form class="index-form">
+          <h3>Войти</h3>
+          <label for="mail">Ваша почта или имя</label>
+          <input type="text" name="mail" required />
+
+          <label for="passwordAuth">Ваш пароль</label>
+          <input type="text" name="passwordAuth" />
+
+          <button onclick="" class="btn-def btn-form">
+            Войти
+          </button>
+        </form></div>
+      </div>
+    </main>
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>

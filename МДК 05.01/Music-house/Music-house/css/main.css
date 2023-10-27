@@ -1,0 +1,151 @@
+/* 
+    | Главный файл стилей
+    |
+    |
+    |
+*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font-family: 'Shentox-Regular';
+  font-size: large;
+
+  background-color: var(--bg-site-color);
+}
+/* Шрифты сайта */
+@font-face {
+  font-family: 'Shentox-Regular';
+  src: url('../fonts/Shentox-Regular.ttf');
+}
+@font-face {
+  font-family: 'Minecraft-Ten';
+  src: url('../fonts/minecraft-ten.ttf');
+}
+
+/* Анимации */
+@keyframes horiz {
+  0% {
+    transform: translateX(4%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Стили заголовков */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Minecraft-Ten';
+  text-align: center;
+  font-size: 22px;
+}
+:root {
+  /* Цвет кнопок при наводке */
+  --cyan-hover-color: rgb(15, 172, 172);
+
+  /* Главный цвет сайта */
+  --main-site-color: rgb(0, 139, 139);
+
+  /* Цвет фона */
+  --bg-site-color: rgb();
+
+  /* Тени карточек */
+  --site-card-shadow: 0px 8px 20px -7px var(--main-site-color);
+}
+
+/* Кнопки */
+/* Стнадартная кнопка сайта */
+button {
+  cursor: pointer;
+}
+button:hover,
+nav ul li:hover,
+.btn-def:hover {
+  transition: all 0.2s;
+  background-color: var(--cyan-hover-color);
+  border: 1px solid var(--cyan-hover-color);
+  border-radius: 8px;
+}
+.btn-def {
+  background-color: rgb(0, 139, 139);
+  color: white;
+
+  border: 1px solid var(--main-site-color);
+  border-radius: 8px;
+
+  padding: 5px;
+  cursor: pointer;
+
+  text-align: center;
+  vertical-align: baseline;
+
+  user-select: none;
+  -moz-user-select: none;
+
+  transition: all 0.2s;
+}
+
+/* Блок контактов на главнйо */
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px;
+
+  background-color: var(--main-site-color);
+  color: white;
+}
+/* Шапка с логотипом */
+header {
+  width: auto;
+  max-width: 80%;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+
+  user-select: none;
+  -moz-user-select: none;
+}
+
+/* Панель навигации */
+nav {
+  margin: 1vh 0 3vh 0;
+
+  /* border: 1px solid var(--main-site-color);
+    border-radius: 8px; */
+
+  text-decoration: none;
+}
+nav ul {
+  /* background-color: darkcyan; */
+  display: flex;
+  justify-content: space-around;
+
+  width: auto;
+  max-width: 72vw;
+
+  margin: 0 auto;
+
+  list-style-type: none;
+}
+nav li {
+  border: 1px solid var(--main-site-color);
+  background-color: var(--main-site-color);
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  padding: 9px;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
