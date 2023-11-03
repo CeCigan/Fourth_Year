@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <title>Music-house.com</title>
+  </head>
+  <body>
+    <!-- Логотип м слоган -->
+    <header>
+      <!-- <h1>Music House</h1> -->
+      <h3 style="font-size: larger">Админ-панель</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.htm">О нас</a></li>
+        <li><a href="../pages/catalog.htm">Каталог</a></li>
+        <li><a href="../pages/about.htm">Где нас найти</a></li>
+        <li><a href="../pages/admin.htm">Админка</a></li>
+        <li><a href="../pages/form.htm">Зарегистрироваться</a></li>
+        <li><a href="../pages/form.htm">Войти</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Форма регистрации -->
+      <div class="reg-form">
+        <form class="index-form">
+          <h3>Создать товар</h3>
+          <label for="name">Имя товара</label>
+          <input type="text" id="mail" required />
+
+          <label for="image">Изображение товара</label>
+          <input type="file" id="name" required />
+
+          <label for="desc">Описание товара</label>
+          <textarea name="" id="desc" cols="30" rows="10" required></textarea>
+
+          <label for="coast">Указать цену</label>
+          <input type="text" id="coast" />
+
+          <button onclick="" class="btn-def btn-form">Добавить товар</button>
+        </form>
+      </div>
+      <h3>Действующие заказы</h3>
+      <div class="orders-group">
+        <div class="order-card">
+          <p><b>Аккордион</b></p>
+          <picture>
+            <img src="../images/accordion_1.jpeg" alt="">
+          </picture>
+          <p>Заказчик: Иванов И.И</p>
+          <p>Дата заказа: 29.03.2023</p>
+          <div>
+            <button class="btn-def" id="btn-succes">Подвердить</button>
+            <button class="btn-def" id="btn-alert">Отменить</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>
