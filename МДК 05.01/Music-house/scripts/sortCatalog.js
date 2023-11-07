@@ -3,36 +3,31 @@ function filterSelection(c) {
   var x, i, coast, userCoast;
   x = document.getElementsByClassName("good-card");
   coast = Number(document.getElementsByClassName('coast').innerHTML);
-  userCoast = Number(document.getElementById('coastInp').value);
+  nameInp = document.getElementById('nameInp').value;
   if (c == "all") c = "";
   // Добавить класс "show" (display:block) к отфильтрованным элементам и удалите класс "show" из элементов, которые не выбраны
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+    }
   }
 }
 
-// function findAtUserCoast(){
-//     let userCoast = document.getElementById('coastInp').value;
-//     let goodsCoast = document.getElementsByClassName('coast');
-
-
-//     console.log(userCoast);
-
-//     for(let i = 0; i < goodsCoast.length; i++){
-//         if(Number(userCoast) >= Number(goodsCoast[i].innerHTML)){
-//             goodsCoast[i].parentElement.style.display = 'flex';
-//             console.log('Del: ' + goodsCoast[i].innerHTML)
-//         } else if (userCoast == '') {
-//             filterSelection("all");
-//             goodsCoast[i].parentElement.style.display = 'flex';
-//         } else {
-//             goodsCoast[i].parentElement.style.display = 'none';
-//         }
-
-//         // console.log([goodsCoast[i].innerHTML])
-//     }
-// }
+// Поиск товара по названию
+function findGoodName(){
+  let inputWithName = document.getElementById('nameInp'),value;
+  let goodName = document.getElementsByClassName('good-name').innerHTML;
+  
+  goodName.forEach(el => {
+    if(el == inputWithName){
+      el.parentNode.classList.add('show')
+    } else {
+      el.parentNode.classList.remove('hidden')
+    }
+  });
+  console.log(goodName)
+}
 
 // Показать отфильтрованные элементы
 function w3AddClass(element, name) {
@@ -61,7 +56,7 @@ function w3RemoveClass(element, name) {
 
 // Добавить активный класс к текущей кнопке управления (выделите ее)
 var btnContainer = document.getElementById("sort-panel");
-var btns = btnContainer.getElementsByClassName("catalog-params");
+var btns = btnContainer.getElementsByTagName("catalog-params");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");

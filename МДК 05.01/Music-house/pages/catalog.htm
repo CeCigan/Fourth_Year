@@ -37,19 +37,19 @@
     <main class="">
       <!-- Блок настройки каталога -->
       <div class="catalog-find-panel">
-        <div name="sort-panel" id="sort-panel">
-          <button class="catalog-params btn-def" onchange ="filterSelection('all')">Нет</button>
-          <button class="catalog-params btn-def" onchange="filterSelection('accordion')">Аккордион</button>
-          <button class="catalog-params btn-def" onchange="filterSelection('guitar')">Гитара</button>
-          <button class="catalog-params btn-def" onchange="filterSelection('synth')">Синтезатор</button>
-          <button class="catalog-params btn-def" onchange="filterSelection('scripka')">Скрипка</button>
+        <div id="sort-panel">
+          <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('all')">Нет</button>
+          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('accordion')">Аккордион</button>
+          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('guitar')">Гитара</button>
+          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('synth')">Синтезатор</button>
+          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('scripka')">Скрипка</button>
         </div>
-        <input type="text" class="input" name="" id="" placeholder="Введите название товара">
+        <input type="text" class="input" name="" id="nameInp" oninput="findGoodName();" placeholder="Введите название товара">
       </div>
       <!-- Блок  -->
       <div class="goods-block">
-        <div class="accordion good-card " id = ''>
-          <h4>Аккордион ByClassic</h4>
+        <div class="good-card accordion" id = ''>
+          <h4 class = 'good-name'>Аккордион ByClassic</h4>
           <img src="../images/accordion_1.jpeg" alt="" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
@@ -86,8 +86,8 @@
           </div>
         </div>
 
-        <div class="guitar good-card" id = ''>
-          <h4>Гитара Horosho</h4>
+        <div class="good-card guitar" id = ''>
+          <h4 class = 'good-name'>Гитара Horosho</h4>
           <img src="../images/guitar_classic_1.jpeg" alt="" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum

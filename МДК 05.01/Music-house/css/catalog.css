@@ -21,6 +21,7 @@
 }
 /* Стили карточки товара */
 .good-card{
+    display: none;
     width: auto;
     max-width: 30%;
 
@@ -74,5 +75,5 @@
     display: block;
 }
 .active{
-    background-color: var(--cyan-hover-color);
+    background-color: calc(var(--cyan-hover-color)/2);
 }
