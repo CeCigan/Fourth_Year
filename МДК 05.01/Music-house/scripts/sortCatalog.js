@@ -1,9 +1,9 @@
 filterSelection("all");
+
 function filterSelection(c) {
-  var x, i, coast, userCoast;
+  var x, i;
   x = document.getElementsByClassName("good-card");
-  coast = Number(document.getElementsByClassName('coast').innerHTML);
-  nameInp = document.getElementById('nameInp').value;
+  coast = Number(document.getElementsByClassName("coast").innerHTML);
   if (c == "all") c = "";
   // Добавить класс "show" (display:block) к отфильтрованным элементам и удалите класс "show" из элементов, которые не выбраны
   for (i = 0; i < x.length; i++) {
@@ -12,21 +12,6 @@ function filterSelection(c) {
       w3AddClass(x[i], "show");
     }
   }
-}
-
-// Поиск товара по названию
-function findGoodName(){
-  let inputWithName = document.getElementById('nameInp'),value;
-  let goodName = document.getElementsByClassName('good-name').innerHTML;
-  
-  goodName.forEach(el => {
-    if(el == inputWithName){
-      el.parentNode.classList.add('show')
-    } else {
-      el.parentNode.classList.remove('hidden')
-    }
-  });
-  console.log(goodName)
 }
 
 // Показать отфильтрованные элементы
@@ -58,7 +43,7 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("sort-panel");
 var btns = btnContainer.getElementsByTagName("catalog-params");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";

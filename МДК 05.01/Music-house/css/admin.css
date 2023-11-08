@@ -1,65 +1,66 @@
 /* Стили страницы администратора */
 /* Стили блока отслеживания заказа */
-.orders-group{
-    display: flex;
+.orders-group {
+  display: flex;
 }
-.order-card{
-    border: 1px solid var(--main-site-color);
-    border-radius: 8px;
+.order-card {
+  border: 1px solid var(--main-site-color);
+  border-radius: 8px;
 
-    padding: 4px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto;
+  padding: 4px;
 
-    width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
 }
-.order-card img{
-    width: auto;
-    height: auto;
-    max-width: 30vw;
+.order-card img {
+  width: auto;
+  height: auto;
+  max-width: 30vw;
 }
-.order-card #btn-succes{
-    background-color: rgba(24, 168, 19, 0.8);
-    color: white;
+.order-card #btn-succes {
+  background-color: rgba(24, 168, 19, 0.8);
+  color: white;
 
-    border: 1px solid rgba(24, 168, 19, 0.8);
-    border-radius: 8px;
+  border: 1px solid rgba(24, 168, 19, 0.8);
+  border-radius: 8px;
 
-    padding: 5px;
-    cursor: pointer;
+  padding: 5px;
+  cursor: pointer;
 
-    text-align: center;
-    vertical-align: baseline;
+  text-align: center;
+  vertical-align: baseline;
 
-    user-select: none;
-    -moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 
-    transition: all 0.2s;
+  transition: all 0.2s;
 }
-.order-card #btn-succes:hover{
-    background-color: rgba(33, 187, 27, 0.8);
+.order-card #btn-succes:hover {
+  background-color: rgba(33, 187, 27, 0.8);
 }
-.order-card #btn-alert{
-    background-color: rgb(238, 30, 30, 0.8);
-    color: white;
+.order-card #btn-alert {
+  background-color: rgb(238, 30, 30, 0.8);
+  color: white;
 
-    border: 1px solid rgb(238, 30, 30, 0.8);
-    border-radius: 8px;
+  border: 1px solid rgb(238, 30, 30, 0.8);
+  border-radius: 8px;
 
-    padding: 5px;
-    cursor: pointer;
+  padding: 5px;
+  cursor: pointer;
 
-    text-align: center;
-    vertical-align: baseline;
+  text-align: center;
+  vertical-align: baseline;
 
-    user-select: none;
-    -moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 
-    transition: all 0.2s;
+  transition: all 0.2s;
 }
-.order-card #btn-alert:hover{
-    background-color: rgba(241, 64, 64, 0.8);
+.order-card #btn-alert:hover {
+  background-color: rgba(241, 64, 64, 0.8);
 }
