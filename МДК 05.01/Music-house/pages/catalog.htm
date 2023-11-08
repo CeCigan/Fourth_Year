@@ -38,19 +38,24 @@
       <!-- Блок настройки каталога -->
       <div class="catalog-find-panel">
         <div id="sort-panel">
+          <p>Отсортировать по</p>
           <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('all')">Нет</button>
-          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('accordion')">Аккордион</button>
-          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('guitar')">Гитара</button>
-          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('synth')">Синтезатор</button>
-          <button name = 'catalog-params' class="btn-def" onclick="filterSelection('scripka')">Скрипка</button>
+          <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('accordion')">Аккордион</button>
+          <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('guitar')">Гитара</button>
+          <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('synth')">Синтезатор</button>
+          <button name = 'catalog-params' class="btn-def" onclick ="filterSelection('scripka')">Скрипка</button>
         </div>
-        <input type="text" class="input" name="" id="nameInp" oninput="findGoodName();" placeholder="Введите название товара">
+        <div class="sortPanel">
+          <button name = 'catalog-params' class="btn-def" onclick="sortTo('all')">Нет</button>
+          <button name = 'catalog-params' class="btn-def" onclick="sortTo(now = new Date())">По дате прибытия</button>
+        </div>
       </div>
       <!-- Блок  -->
       <div class="goods-block">
         <div class="good-card accordion" id = ''>
           <h4 class = 'good-name'>Аккордион ByClassic</h4>
           <img src="../images/accordion_1.jpeg" alt="" />
+          <p>Будет у вас: <p id="date">09.11.2023</p></p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
             voluptates obcaecati suscipit, facere dolor sapiente? Explicabo
@@ -89,6 +94,7 @@
         <div class="good-card guitar" id = ''>
           <h4 class = 'good-name'>Гитара Horosho</h4>
           <img src="../images/guitar_classic_1.jpeg" alt="" />
+          <p>Будет у вас: <p id="date">11.11.2023</p></p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
             voluptates obcaecati suscipit, facere dolor sapiente? Explicabo
